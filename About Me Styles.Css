@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+}
+.about-me-section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #222;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+.about-me-section h2 {
+    text-align: center;
+    color: #fff;
+}
+.about-me-section p {
+    line-height: 1.6;
+    color: #fff;
+    margin-bottom: 15px;
+}
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #222;
+    color: #ddd;
+}
+header h1 {
+    margin: 0;
+}
+header nav a {
+    color: #ddd;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+.skills-section {
+  background-color: #111;   /* خلفية سوداء هادية */
+  color: #f5f5f5;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.skill {
+  width: 250px;
+}
+
+.skill h3 {
+  margin-bottom: 10px;
+  color: #00bcd4; /* لمسة فاتحة */
+}
+
+.progress {
+  background-color: #333;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 30px;
+  line-height: 30px;
+  color: #111;
+  text-align: right;
+  padding-right: 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  animation: fill 2s ease-out forwards;
+}
+
+/* ألوان مختلفة لكل لغة */
+.progress-bar.html {
+  background-color: #e44d26; /* برتقالي HTML */
+  width: 0; /* يبدأ من صفر */
+  animation: html-fill 2s ease-out forwards;
+}
+
+.progress-bar.css {
+  background-color: #264de4; /* أزرق CSS */
+  width: 0;
+  animation: css-fill 2s ease-out forwards;
+}
+
+.progress-bar.js {
+  background-color: #f0db4f; /* أصفر JS */
+  color: #111;
+  width: 0;
+  animation: js-fill 2s ease-out forwards;
+}
+
+/* أنيميشن لكل بار */
+@keyframes html-fill {
+  to { width: 55%; }
+}
+
+@keyframes css-fill {
+  to { width: 30%; }
+}
+
+@keyframes js-fill {
+  to { width: 45%; }
+}
